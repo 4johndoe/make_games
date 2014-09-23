@@ -1,3 +1,4 @@
+#!/usr/bin/python
 # Simulate (a Simon clone)
 # By Al Sweigart al@inventwithpython.com
 # http://inventwithpython.com/pygame
