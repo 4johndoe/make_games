@@ -19,4 +19,14 @@ def imgcolorkey(image, colorkey):
 
 def load_image(filename, colorkey = None):
     filename = os.path.join('data', filename)
-    
+    image = pygame.image.load(filename).convert()
+    return imgcolorkey(image, colorkey)
+
+class SpriteSheet(self):
+    """docstring for SpriteSheet"""
+    def __init__(self, filename):
+        self.sheet = load_image(filename)
+
+    def imgat(self, rect, colorkey = None):
+        rect = Rect(rect)
+        image = pygame.Surface(rect.size).con
